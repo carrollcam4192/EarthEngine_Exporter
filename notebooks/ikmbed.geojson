@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "ikmbed",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "test2", "Description": "" }, "geometry": { "type": "Polygon", "coordinates": [ [ [ -70.606126381226488, 41.896048449015453, 0.0 ], [ -70.598433065304562, 41.897786671938498, 0.0 ], [ -70.599919287560155, 41.9011989082734, 0.0 ], [ -70.607650976900061, 41.899816811070508, 0.0 ], [ -70.606126381226488, 41.896048449015453, 0.0 ] ] ] } }
+]
+}
