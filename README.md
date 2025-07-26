@@ -8,13 +8,18 @@ This repository contains a python notebook that takes a KML file and exports the
 - Google Earth Pro
 ---
 # Instructions:
-First, create a python virtual environment within the project folder:
+To start, navigate to the project folder in the terminal, and create a python virtual environment within the project folder:
 ```
 python3.11 -m venv venv
 ```
-Next, use the 'requirements.txt' file to replicate the virtual environment with the proper packages:
+Next, activate the virutal environment within the project folder:
+```
+source venv/bin/activate
 ```
 
+Next, use the 'requirements.txt' file to replicate the virtual environment with the proper packages:
+```
+pip install -r requirements.txt
 ```
 
 
