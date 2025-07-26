@@ -8,7 +8,9 @@ This repository contains a python notebook that takes a KML file and exports the
 ---
 # Instructions:
 First, create a python virtual environment within the project folder:
-``` python -m venv venv```
+```
+python -m venv venv
+```
 
 
 create virtual envirnment (python 3.11)
