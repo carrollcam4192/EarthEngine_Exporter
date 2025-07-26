@@ -25,7 +25,7 @@ At this point, the user will be ready to run the program. Run the import cells a
 
 Next, copy and paste the kml file into the project folder.
 After that, the user will copy the file PATH into the geopandas 'read_file' function (should be in the 'Data Cleaning and File Conversion' cell):
-```
+```python
 gdf = gpd.read_file('Path/to/kml_file') ### <=== EDIT THIS LINE
 ```
 
