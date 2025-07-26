@@ -32,7 +32,7 @@ gdf = gpd.read_file('Path/to/kml_file') ### <=== EDIT THIS LINE
 
 Lastly, the user will need to specify an image description, a folder for your the image to reside in (if not it will be in the user's drive itself), and a name for the file.
 
-```
+```python
 task = ee.batch.Export.image.toDrive(
     image=vis_image,
     description='Description of the Clipped image', ### <=== EDIT THIS LINE
