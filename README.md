@@ -1,6 +1,7 @@
 # Google EarthEngine Exporter
 
 This repository contains a python notebook that takes a KML file and exports the region within the file to an image in the User's google drive. This code can be used in conjunction with Google earth Pro to precisely outline key regions of interest, and perform a batch export of satellite images, saving time when there are multiple regions that need to be clipped.
+
 ---
 # Requirements:
 - Python 3.11
@@ -9,7 +10,11 @@ This repository contains a python notebook that takes a KML file and exports the
 # Instructions:
 First, create a python virtual environment within the project folder:
 ```
-python -m venv venv
+python3.11 -m venv venv
+```
+Next, use the 'requirements.txt' file to replicate the virtual environment with the proper packages:
+```
+
 ```
 
 
