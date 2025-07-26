@@ -6,3 +6,5 @@ create virtual envirnment (python 3.11)
 install requirements
 
 ```test inline
+ #test inline
+print('hello world')
