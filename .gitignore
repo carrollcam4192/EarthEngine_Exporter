@@ -1,6 +1,7 @@
 venv/
 __pycache__/
 kml_files/
+notebooks/
 *.pyc
 *.pyo
 .env
