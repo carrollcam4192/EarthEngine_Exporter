@@ -12,7 +12,7 @@ To start, navigate to the project folder in the terminal, and create a python vi
 ```
 python3.11 -m venv venv
 ```
-Next, activate the virutal environment within the project folder:
+Next, activate the virtual environment within the project folder:
 ```
 source venv/bin/activate
 ```
@@ -21,7 +21,7 @@ Next, use the 'requirements.txt' file to replicate the virtual environment with 
 ```
 pip install -r requirements.txt
 ```
-At this point, the user will be ready to run the program. Run the import cells and authenticate google earth engine use for the project. A browser window will pop open, and after authorizing use, an authorization token be generated. At the top of the code editor window there should be a prompt to enter this token.
+At this point, the user will be ready to run the program. Run the import cells and authenticate Google Earth engine use for the project. A browser window will pop open, and after authorizing use, an authorization token be generated. At the top of the code editor window there should be a prompt to enter this token.
 
 Next, copy and paste the kml file into the project folder.
 After that, the user will copy the file PATH into the geopandas 'read_file' function (should be in the 'Data Cleaning and File Conversion' cell):
@@ -30,13 +30,13 @@ gdf = gpd.read_file('Path/to/kml_file') ### <=== EDIT THIS LINE
 ```
 
 
-Lastly, the user will need to specify an image description, a folder for your the image to reside in (if not it will be in the user's drive itself), and a name for the file.
+Lastly, the user will need to specify an image description, a folder for your the image to reside in (if not it will be in the user's Drive itself), and a name for the file. This code block is in the 'Exporting Image to Google Drive' cell
 
 ```python
 task = ee.batch.Export.image.toDrive(
     image=vis_image,
     description='Description of the Clipped image', ### <=== EDIT THIS LINE
-    folder='My_googledrive_folder', ### <=== EDIT THIS LINE
+    folder='My_GoogleDrive_folder', ### <=== EDIT THIS LINE
     fileNamePrefix='file_name', ### <=== EDIT THIS LINE
     scale=10,  # Native resolution
     region=my_region,
