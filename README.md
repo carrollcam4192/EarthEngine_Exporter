@@ -21,6 +21,7 @@ Next, use the 'requirements.txt' file to replicate the virtual environment with 
 ```
 pip install -r requirements.txt
 ```
+At this point, the user will be ready to run the program. Run the import cells and authenticate google earth engine use for the project. A browser window will pop open, and after authorizing use, an authorization token be generated. At the top of the code editor window you should be prompted to enter this token.
 
 Next, copy and paste your kml file into the project folder.
 After that, the user will copy the file PATH into the geopandas 'read_file' function (should be in the 'Data Cleaning and File Conversion' cell):
@@ -29,11 +30,19 @@ gdf = gpd.read_file('Path/to/kml_file') ### <=== EDIT THIS LINE
 ```
 
 
+Lastly, You will need to specify an image description, a folder for your the image to reside in (if not it will be in the user's drive itself), and a name for the file.
 
+```
+task = ee.batch.Export.image.toDrive(
+    image=vis_image,
+    description='Description of the Clipped image', ### <=== EDIT THIS LINE
+    folder='My_googledrive_folder', ### <=== EDIT THIS LINE
+    fileNamePrefix='file_name', ### <=== EDIT THIS LINE
+    scale=10,  # Native resolution
+    region=my_region,
+    maxPixels=1e9,
+    formatOptions={'cloudOptimized': True}
+)
+```
+# Once all the cells have completed running, a .tif file should be present within the user's google drive, in the specified folder, which shows the clipped image!
 
-create virtual envirnment (python 3.11)
-install requirements
-
-```test inline
- #test inline
-print('hello world')
